@@ -1,0 +1,19 @@
+<div class="search-container" [ngClass]="isVeryPeriActive ? 'isPeryActive' : 'isPeryInactive'">
+  <form class="search__container" [formGroup]="searchForm">
+      <p class="search__title">
+          Go ahead, search for a subreddit
+      </p>
+      <input class="search__input" type="text" placeholder="Search" formControlName="searchField" (keydown.enter)="mySubmit()">
+  </form>
+
+  <div class="credits__container">
+      <p (mouseenter)="toggleVeryPeri(true)" (mouseleave)="toggleVeryPeri(false)" class="credits__text">
+        Check the official color of 2022
+        <a href="https://www.pantone.com/color-of-the-year-2022" class="credits__link">Very Peri</a>
+      </p>
+  </div>
+</div>
+
+<div class="posts-container" [ngClass]="isVeryPeriActive ? 'isPeryActive' : 'isPeryInactive'">
+  <app-post-list *ngIf="posts" [postList]="posts"></app-post-list>
+</div>

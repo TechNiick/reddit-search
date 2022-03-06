@@ -1,0 +1,18 @@
+<div  class="post-container" [ngClass]="data.selftext.length == 0 ? 'animate-no-data-post' : ''">
+  <div class="left-container">
+    <div>
+      <mat-icon> keyboard_arrow_up </mat-icon>
+      <p>{{data.ups}}</p>
+    </div>
+    <div>
+      <p>{{data.downs}}</p>
+      <mat-icon> keyboard_arrow_down</mat-icon>
+    </div>
+  </div>
+  <div class="right-container">
+    <p class="p-title" (click)="togglePost()">{{data.title}}</p>
+    <div class="div-self-text" *ngIf="isActive">
+      {{data.selftext}}
+    </div>
+  </div>
+</div>
