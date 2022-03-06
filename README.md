@@ -1,6 +1,6 @@
 # RedditApp Setup
 
-Run `npm install` in order to install dependencies
+Run `npm install` in order to install dependencies.<br />
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Running unit tests
