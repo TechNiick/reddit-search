@@ -1,8 +1,8 @@
 # RedditApp Setup
 
-Angular CLI: 13.0.4
-Node: 16.10.0
-Package Manager: npm 7.24.0
+Angular CLI: 13.0.4<br />
+Node: 16.10.0<br />
+Package Manager: npm 7.24.0<br />
 
 Run `npm install` in order to install dependencies.<br />
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
